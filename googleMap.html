@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Tìm kiếm bệnh</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Tìm kiếm bệnh</h1>
+      <label for="userSymptoms" class="form-label">Nhập triệu chứng:</label>
+      <input type="text" id="userSymptoms" class="form-control" />
+      <button onclick="searchDisease()" class="btn btn-primary mt-3">
+        Tìm kiếm
+      </button>
+
+      <div id="result" class="mt-4"></div>
+    </div>
+
+    <script src="./dataSymptoms.js"></script>
+    <script src="./handleSymptoms.js"></script>
+    <script>
+      function searchDisease(e) {
+        const userSymptoms = e.toLowerCase();
+        const filteredKeywords = filterKeywords(
+          userSymptoms,
+          getAllSymptoms(diseases)
+        );
+        const mostMatchingDisease = findDiseaseWithMostMatchingSymptoms(
+          diseases,
+          filteredKeywords
+        );
+
+        // Tạo nội dung HTML để hiển thị chi tiết bệnh
+        const resultDiv = document.getElementById("result");
+        if (mostMatchingDisease) {
+          resultDiv.innerHTML = `
+                  <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Bệnh: ${
+                          mostMatchingDisease.disease_name
+                        }</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Triệu chứng:</strong><br>
+                                ${mostMatchingDisease.symptoms.join("<br>")}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Nguyên nhân:</strong><br>
+                                ${mostMatchingDisease.causes}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Phương pháp chẩn đoán:</strong><br>
+                                ${mostMatchingDisease.diagnosis_methods}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Phương pháp điều trị:</strong><br>
+                                ${mostMatchingDisease.treatment_methods}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Dự đoán và tiên lượng:</strong><br>
+                                ${mostMatchingDisease.prediction_and_prognosis}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Biện pháp phòng ngừa:</strong><br>
+                                ${mostMatchingDisease.preventive_measures}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Mức độ phổ biến:</strong><br>
+                                ${mostMatchingDisease.prevalence}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Biến chứng:</strong><br>
+                                ${mostMatchingDisease.complications.join(
+                                  "<br>"
+                                )}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Bệnh liên quan:</strong><br>
+                                ${mostMatchingDisease.related_conditions.join(
+                                  "<br>"
+                                )}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Yếu tố nguy cơ:</strong><br>
+                                ${mostMatchingDisease.risk_factors.join("<br>")}
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Thông tin về sự phổ biến ở các nhóm tuổi:</strong><br>
+                                &emsp;Trẻ em: ${
+                                  mostMatchingDisease.age_prevalence.children
+                                }<br>
+                                &emsp;Người lớn: ${
+                                  mostMatchingDisease.age_prevalence.adults
+                                }
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Vaccine:</strong><br>
+                                ${
+                                  mostMatchingDisease.vaccination.availability
+                                } <br> ${
+            mostMatchingDisease.vaccination.recommendation
+          }
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Thuốc khuyến cáo:</strong><br>
+                                <ul>
+                                    ${mostMatchingDisease.recommended_medications
+                                      .map(
+                                        (medication) =>
+                                          `<li>${medication.name} - ${medication.dosage} - ${medication.notes}</li>`
+                                      )
+                                      .join("")}
+                                </ul>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Tham khảo nguồn thông tin:</strong><br>
+                                <ul>
+                                    ${mostMatchingDisease.references
+                                      .map(
+                                        (reference) =>
+                                          `<li><a href="${reference.link}" target="_blank">${reference.title}</a></li>`
+                                      )
+                                      .join("")}
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>`;
+        } else {
+          resultDiv.innerHTML = `<h1>Tôi không thể chẩn đoán bệnh dựa trên triệu chứng của bạn</h1>`;
+        }
+      }
+      // Sự kiện khi người dùng thay đổi nội dung trường nhập
+      document
+        .getElementById("userSymptoms")
+        .addEventListener("change", (e) => searchDisease(e.target.value));
+    </script>
+  </body>
+</html>
