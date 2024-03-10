@@ -342,5 +342,246 @@ let diseases =  [
             { "title": "CDC - Obesity", "link": "https://www.cdc.gov/obesity/index.html" },
             { "title": "Mayo Clinic - Obesity", "link": "https://www.mayoclinic.org/diseases-conditions/obesity/symptoms-causes/syc-20375742" }
         ]
-    }
+    },
+
+    
+    // Bệnh về nội tiết
+    {
+        "disease_name": "Đái tháo đường",
+        "description": "Đái tháo đường là một loại bệnh nội tiết phổ biến, được đặc trưng bởi mức đường huyết cao. Bệnh có thể gây ra nhiều biến chứng nghiêm trọng nếu không được kiểm soát, bao gồm tổn thương thần kinh, tổn thương mạch máu và tổn thương cơ tim.",
+        "symptoms": ["Thèm ăn", "Đứng đường thường xuyên", "Mệt mỏi", "Chảy nước miếng", "Thường xuyên đi tiểu, đặc biệt vào ban đêm", "Thay đổi cân nặng", "Khó chữa lành vết thương"],
+        "causes": "Đái tháo đường thường được gây ra bởi sự không cân đối của insulin, một hormone quan trọng có nhiệm vụ điều hòa đường huyết. Nguyên nhân chính có thể bao gồm yếu tố di truyền, lối sống không lành mạnh và béo phì.",
+        "diagnosis_methods": "Cách chẩn đoán đái tháo đường thường dựa vào các xét nghiệm máu để đo mức đường huyết và mức insulin. Một số xét nghiệm khác cũng có thể được sử dụng để đánh giá tổn thương cho các cơ quan khác như mạch máu và thận.",
+        "treatment_methods": "Phương pháp điều trị đái tháo đường thường bao gồm kiểm soát cân nặng, tập thể dục đều đặn, ăn uống lành mạnh và thường xuyên kiểm tra đường huyết. Trong một số trường hợp, việc sử dụng insulin hoặc các loại thuốc điều trị đường huyết cũng có thể được yêu cầu.",
+        "prediction_and_prognosis": "Đái tháo đường là một bệnh mãn tính có thể được kiểm soát thông qua kiểm soát đường huyết và lối sống lành mạnh. Tuy nhiên, nếu không được kiểm soát, bệnh có thể dẫn đến các biến chứng nghiêm trọng như tổn thương thần kinh, viêm nhiễm và tổn thương cơ tim.",
+        "preventive_measures": "Các biện pháp phòng ngừa đái tháo đường bao gồm duy trì một lối sống lành mạnh, kiểm soát cân nặng, tập thể dục đều đặn và kiểm tra định kỳ đường huyết.",
+        "prevalence": "Đái tháo đường đang trở thành một vấn đề sức khỏe công cộng phổ biến trên toàn thế giới, đặc biệt là ở các nước phát triển.",
+        "complications": ["Tổn thương thần kinh", "Viêm nhiễm", "Tổn thương cơ tim", "Tổn thương mạch máu"],
+        "related_conditions": ["Béo phì", "Huyết áp cao", "Huyết áp thấp"],
+        "risk_factors": ["Yếu tố di truyền", "Béo phì", "Ít vận động", "Lối sống không lành mạnh"],
+        "age_prevalence": {
+            "children": "Đái tháo đường ở trẻ em thường là dạng đái tháo đường loại 1, do yếu tố di truyền.",
+            "adults": "Đái tháo đường ở người lớn thường là dạng đái tháo đường loại 2, thường do lối sống không lành mạnh và béo phì."
+        },
+        "insulin_treatment": {
+            "types": ["Insulin dài hạn", "Insulin ngắn hạn", "Insulin tiêm sau bữa ăn"],
+            "administration": "Insulin thường được tiêm dưới da. Các phương pháp tiêm có thể bao gồm tiêm bằng ống tiêm, bút tiêm hoặc máy tiêm tự động."
+        },
+        "vaccination": {
+            "availability": "Không có vaccine đặc hiệu cho obesity.",
+            "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng obesity."
+        },
+        "recommended_medications": [
+            { "name": "Orlistat", "dosage": "120mg, 1 viên ba lần mỗi ngày sau bữa ăn", "notes": "Giảm hấp thụ mỡ" },
+            { "name": "Phentermine-Topiramate", "dosage": "3.75/23mg, tăng dần lên 15/92mg, 1 viên mỗi ngày", "notes": "Giảm cảm giác thèm ăn" },
+            { "name": "Liraglutide", "dosage": "0.6mg, tăng dần lên 3mg, 1 lần mỗi ngày", "notes": "Giảm cảm giác thèm ăn" }
+        ],
+        "references": [
+            {"title": "American Diabetes Association", "link": "https://www.diabetes.org"},
+            {"title": "Mayo Clinic - Diabetes", "link": "https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444"}
+        ]
+        },
+    
+        {
+            "disease_name": "Bệnh Basedow (Basedow Graves)",
+            "description": "Là bệnh tự miễn, tuyến giáp hoạt động quá mức (cường giáp) do sự kích thích của các tự kháng thể chống lại thụ thể TSH trên tế bào tuyến giáp.",
+            "symptoms": [
+              "Bướu cổ",
+              "Mắt lồi",
+              "Sút cân",
+              "Tim đập nhanh",
+              "Lo lắng, bồn chồn",
+              "Mệt mỏi"
+            ],
+            "causes": "Do sự kích thích của các tự kháng thể chống lại thụ thể TSH trên tế bào tuyến giáp.",
+            "diagnosis_methods": [
+              "Xét nghiệm máu: TSH thấp, FT4 cao, T3 cao",
+              "Xét nghiệm miễn dịch: Anti-TSHR dương tính",
+              "Siêu âm tuyến giáp: Bướu cổ, tăng lưu lượng máu"
+            ],
+            "treatment_methods": [
+              "Thuốc kháng giáp",
+              "Iốt phóng xạ",
+              "Phẫu thuật cắt bỏ tuyến giáp"
+            ],
+            "prediction_and_prognosis": [
+              "Có thể điều trị được",
+              "Có thể tái phát",
+              "Biến chứng: suy tim, loãng xương, v.v."
+            ],
+            "preventive_measures": "Không có cách phòng ngừa hiệu quả",
+            "prevalence": "0,5 - 2% dân số",
+            "complications": [
+              "Suy tim",
+              "Loãng xương",
+              "Bệnh võng mạc"
+            ],
+            "related_conditions": [
+              "Viêm khớp dạng thấp",
+              "Bệnh bạch cầu tự miễn"
+            ],
+            "risk_factors": [
+              "Tiền sử gia đình",
+              "Yếu tố môi trường"
+            ],
+            "age_prevalence": {
+              "children": "Phổ biến nhất ở trẻ em.",
+              "adults": "Cũng có thể ảnh hưởng đến người lớn."
+            },
+            "vaccination": {
+              "availability": "Không có vaccine",
+              "recommendation": "Không có khuyến nghị cụ thể"
+            },
+            "recommended_medications": [
+              {
+                "name": "Thuốc kháng giáp",
+                "dosage": "Theo chỉ định của bác sĩ",
+                "notes": "Giảm hoạt động của tuyến giáp"
+              },
+              {
+                "name": "Thuốc chẹn beta",
+                "dosage": "Theo chỉ định của bác sĩ",
+                "notes": "Giảm nhịp tim và huyết áp"
+              }
+            ],
+            "references": [
+                {"title": "Mayo Clinic Health System", "link":"https://www.mayoclinichealthsystem.org/hometown-health/speaking-of-health/thyroid-disease-symptoms-and-treatment"},
+                {"title": "Tam Anh Hospital", "link":"https://tamanhhospital.vn/benh-basedow/"}
+            ]
+          },
+          {
+            "disease_name": "Suy giáp",
+          "description": "Là tình trạng tuyến giáp hoạt động kém hiệu quả (giảm giáp).",
+          "symptoms": [
+            "Tăng cân",
+            "Mệt mỏi",
+            "Lạnh",
+            "Da khô",
+            "Táo bón",
+            "Rụng tóc"
+          ],
+          "causes": [
+            "Do thiếu hụt hormone tuyến giáp",
+            "Do các bệnh tự miễn",
+            "Do phẫu thuật cắt bỏ tuyến giáp"
+          ],
+          "diagnosis_methods": [
+            "Xét nghiệm máu: TSH cao, FT4 thấp, T3 thấp",
+            "Siêu âm tuyến giáp"
+          ],
+          "treatment_methods": [
+            "Thuốc thay thế hormone tuyến giáp",
+            "Chế độ ăn uống"
+          ],
+          "prediction_and_prognosis": [
+            "Có thể điều trị được",
+            "Biến chứng: suy tim, trầm cảm, v.v."
+          ],
+          "preventive_measures": "Không có cách phòng ngừa hiệu quả",
+          "prevalence": "2% dân số",
+          "complications": [
+            "Suy tim",
+            "Trầm cảm",
+            "Loãng xương"
+          ],
+          "related_conditions": [
+            "Bệnh Basedow",
+            "Viêm tuyến giáp"
+          ],
+          "risk_factors": [
+            "Tiền sử gia đình",
+            "Bệnh tự miễn",
+            "Phẫu thuật tuyến giáp"
+          ],
+          "age_prevalence": {
+            "children": "Ít phổ biến ở trẻ em.",
+            "adults": "Phổ biến nhất ở người lớn tuổi."
+          },
+          "vaccination": {
+            "availability": "Không có vaccine",
+            "recommendation": "Không có khuyến nghị cụ thể"
+          },
+          "recommended_medications": [
+            {
+              "name": "Thuốc thay thế hormone tuyến giáp",
+              "dosage": "Theo chỉ định của bác sĩ",
+              "notes": "Bổ sung hormone tuyến giáp thiếu hụt"
+            }
+          ],
+          "references": [
+            {"title": "Mayo Clinic Health System", "link":"https://www.mayoclinic.org/diseases-conditions/hypothyroidism/symptoms-causes/syc-20350284"},
+            {"title": "Tam Anh Hospital", "link":"https://tamanhhospital.vn/benh-suy-giap/"},
+          ]
+        },
+        {
+        "disease_name": "Bệnh cường giáp",
+        "description": "Là tình trạng tuyến giáp hoạt động quá mức (cường giáp).",
+        "symptoms": [
+          "Giảm cân",
+          "Tim đập nhanh",
+          "Lo lắng, bồn chồn",
+          "Mệt mỏi",
+          "Cổ họng bướu",
+          "Tiêu chảy"
+        ],
+        "causes": [
+          "Do nhiều yếu tố, bao gồm bệnh Graves, bướu cổ nhân độc, và viêm tuyến giáp.",
+        ],
+        "diagnosis_methods": [
+          "Xét nghiệm máu: TSH thấp, FT4 cao, T3 cao",
+          "Xét nghiệm miễn dịch: Anti-TSHR dương tính (trong bệnh Graves)",
+          "Siêu âm tuyến giáp: Bướu cổ, tăng lưu lượng máu"
+        ],
+        "treatment_methods": [
+          "Thuốc kháng giáp",
+          "Iốt phóng xạ",
+          "Phẫu thuật cắt bỏ tuyến giáp"
+        ],
+        "prediction_and_prognosis": [
+          "Có thể điều trị được",
+          "Có thể tái phát",
+          "Biến chứng: suy tim, loãng xương, v.v."
+        ],
+        "preventive_measures": "Hạn chế tiếp xúc với iốt phóng xạ",
+        "prevalence": "2% dân số",
+        "complications": [
+          "Suy tim",
+          "Loãng xương",
+          "Bệnh võng mạc",
+          "Cơn bão giáp"
+        ],
+        "related_conditions": [
+          "Bệnh Basedow",
+          "Viêm tuyến giáp"
+        ],
+        "risk_factors": [
+          "Tiền sử gia đình",
+          "Bệnh tự miễn",
+          "Tiếp xúc với iốt phóng xạ"
+        ],
+        "age_prevalence": {
+          "children": "Ít phổ biến ở trẻ em.",
+          "adults": "Phổ biến nhất ở người lớn tuổi."
+        },
+        "vaccination": {
+          "availability": "Không có vaccine",
+          "recommendation": "Không có khuyến nghị cụ thể"
+        },
+        "recommended_medications": [
+          {
+            "name": "Thuốc kháng giáp",
+            "dosage": "Theo chỉ định của bác sĩ",
+            "notes": "Giảm hoạt động của tuyến giáp"
+          },
+          {
+            "name": "Thuốc chẹn beta",
+            "dosage": "Theo chỉ định của bác sĩ",
+            "notes": "Giảm nhịp tim và huyết áp"
+          }
+        ],
+        "references": [
+            {"title": "Mayo Clinic Health System", "link":"https://www.mayoclinic.org/diseases-conditions/hyperthyroidism/symptoms-causes/syc-20353682"},
+            {"title": "Tam Anh Hospital", "link":"https://tamanhhospital.vn/benh-cuong-giap/"}
+        ]
+      }
 ];
