@@ -586,9 +586,7 @@ let diseases =  [
       },
 
       //Benh than kinh
-      {
-        "diseases": [
-          {
+            {
             "disease_name": "Đau đầu cảm xúc",
             "description": "Đau đầu cảm xúc là một loại rối loạn thần kinh có thể xuất hiện khi trải qua tình trạng căng thẳng, lo âu hoặc stress. Bệnh thường gây ra cảm giác đau đầu nhức nhối, đau nhức ở vùng thái dương và có thể kèm theo các triệu chứng như căng cơ cổ và vai.",
             "symptoms": ["Đau đầu nhức nhối", "Cảm giác căng cơ cổ và vai", "Mệt mỏi", "Khó chịu"],
@@ -1001,8 +999,7 @@ let diseases =  [
             {"title": "American Brain Tumor Association - About Brain Tumors", "link": "https://www.abta.org/about-brain-tumors/"}
           ]
         }
-        ]
-      }
-      
+        
+
         
 ];
