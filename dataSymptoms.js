@@ -583,5 +583,426 @@ let diseases =  [
             {"title": "Mayo Clinic Health System", "link":"https://www.mayoclinic.org/diseases-conditions/hyperthyroidism/symptoms-causes/syc-20353682"},
             {"title": "Tam Anh Hospital", "link":"https://tamanhhospital.vn/benh-cuong-giap/"}
         ]
+      },
+
+      //Benh than kinh
+      {
+        "diseases": [
+          {
+            "disease_name": "Đau đầu cảm xúc",
+            "description": "Đau đầu cảm xúc là một loại rối loạn thần kinh có thể xuất hiện khi trải qua tình trạng căng thẳng, lo âu hoặc stress. Bệnh thường gây ra cảm giác đau đầu nhức nhối, đau nhức ở vùng thái dương và có thể kèm theo các triệu chứng như căng cơ cổ và vai.",
+            "symptoms": ["Đau đầu nhức nhối", "Cảm giác căng cơ cổ và vai", "Mệt mỏi", "Khó chịu"],
+            "causes": "Đau đầu cảm xúc thường xuất hiện khi cơ thể trải qua tình trạng căng thẳng, lo âu hoặc stress. Các yếu tố tâm lý và môi trường có thể đóng vai trò quan trọng trong việc gây ra bệnh.",
+            "diagnosis_methods": "Chẩn đoán đau đầu cảm xúc thường dựa trên triệu chứng và cuộc trò chuyện với bác sĩ để đánh giá tình trạng tâm lý và mức độ căng thẳng.",
+            "treatment_methods": "Điều trị đau đầu cảm xúc thường bao gồm giảm căng thẳng và lo âu thông qua phương pháp thư giãn, tập thể dục đều đặn, và nếu cần thiết, sử dụng thuốc giảm đau hoặc thuốc chống lo âu.",
+            "prediction_and_prognosis": "Hầu hết các trường hợp đau đầu cảm xúc có thể được kiểm soát và giảm nhẹ thông qua các biện pháp giảm căng thẳng và tâm lý. Tuy nhiên, nếu không được quản lý đúng cách, bệnh có thể kéo dài và gây ra ảnh hưởng đến chất lượng cuộc sống.",
+            "preventive_measures": "Các biện pháp phòng ngừa đau đầu cảm xúc bao gồm quản lý căng thẳng, duy trì lối sống lành mạnh, và tham khảo ý kiến của chuyên gia tâm lý khi cần thiết.",
+            "complications": ["Trầm cảm", "Rối loạn giấc ngủ", "Mất ngủ"],
+            "related_conditions": ["Lo âu", "Stress", "Rối loạn giấc ngủ"],
+            "risk_factors": ["Tình trạng căng thẳng", "Lo âu", "Yếu tố tâm lý"],
+            "age_prevalence": {
+                "children": "Đau đầu cảm xúc hiếm khi xuất hiện ở trẻ em.",
+                "adults": "Người trưởng thành thường là nhóm người mắc đau đầu cảm xúc nhiều nhất."
+            },
+            "vaccination": {
+                "availability": "Hiện nay không có vaccine đặc hiệu cho đau đầu cảm xúc.",
+                "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng đau đầu cảm xúc."
+            },
+            "recommended_medications": [
+                {"name": "Acetaminophen", "dosage": "500mg, 1 viên mỗi 6 giờ", "notes": "Giảm đau"},
+                {"name": "Benzodiazepines", "dosage": "Theo chỉ định của bác sĩ", "notes": "Thuốc chống lo âu khi cần thiết"},
+                {"name": "Cognitive Behavioral Therapy", "dosage": "Theo chỉ định của chuyên gia tâm lý", "notes": "Phương pháp thư giãn và giảm căng thẳng"}
+            ],
+            "references": [
+                {"title": "American Migraine Foundation - Emotional Stress Headaches", "link": "https://americanmigrainefoundation.org/resource-library/emotional-stress-headaches/"}
+            ]
+          },
+          {
+            "disease_name": "Đau thần kinh toàn thân",
+            "description": "Fibromyalgia là một loại rối loạn thần kinh gây đau và cảm giác căng trên toàn bộ cơ thể, thường đi kèm với mệt mỏi và giảm khả năng tập trung.",
+            "symptoms": ["Đau toàn thân", "Mệt mỏi", "Rối loạn giấc ngủ", "Đau đầu"],
+            "causes": "Nguyên nhân chính của fibromyalgia chưa rõ, nhưng yếu tố gen, chấn thương và stress có thể đóng vai trò.",
+            "diagnosis_methods": "Chẩn đoán dựa trên triệu chứng, kiểm tra vùng đau và loại trừ các nguyên nhân khác.",
+            "treatment_methods": "Điều trị tập trung vào giảm triệu chứng thông qua tập luyện, tư vấn tâm lý và sử dụng thuốc giảm đau.",
+            "prediction_and_prognosis": "Fibromyalgia là một bệnh mãn tính, nhưng với quản lý chăm sóc, nhiều người có thể kiểm soát triệu chứng và duy trì chất lượng cuộc sống.",
+            "preventive_measures": "Không có biện pháp phòng ngừa cụ thể, nhưng duy trì lối sống lành mạnh có thể giảm nguy cơ.",
+            "complications": ["Rối loạn tâm thần", "Hạn chế hoạt động vận động"],
+            "related_conditions": ["Hội chứng mệt mỏi mãn tính", "Rối loạn lo âu"],
+            "risk_factors": ["Yếu tố gen", "Chấn thương", "Stress tâm lý"],
+            "age_prevalence": {
+                "adults": "Fibromyalgia thường xuất hiện ở người trưởng thành."
+            },
+            "vaccination": {
+                "availability": "Hiện nay không có vaccine đặc hiệu cho fibromyalgia.",
+                "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng fibromyalgia."
+            },
+            "recommended_medications": [
+                {"name": "Pregabalin", "dosage": "150mg-300mg mỗi ngày", "notes": "Giảm đau và căng thẳng cơ"},
+                {"name": "Duloxetine", "dosage": "30mg-60mg mỗi ngày", "notes": "Kiểm soát triệu chứng và cải thiện tâm trạng"}
+            ],
+            "references": [
+                {"title": "American College of Rheumatology - Fibromyalgia", "link": "https://www.rheumatology.org/I-Am-A/Patient-Caregiver/Diseases-Conditions/Fibromyalgia"}
+            ]
+          },
+          {
+            "disease_name": "Parkinson",
+            "description": "Parkinson là một rối loạn thần kinh tiến triển chậm, gây ra cảm giác rung chuyển, cứng cơ, và khó khăn trong việc điều chỉnh chuyển động.",
+            "symptoms": ["Run chuyển", "Cứng cơ", "Khó khăn trong việc điều chỉnh chuyển động", "Rối loạn ngủ"],
+            "causes": "Parkinson thường do mất tế bào dopamin trong não, có thể do yếu tố gen hoặc yếu tố môi trường.",
+            "diagnosis_methods": "Chẩn đoán dựa trên các triệu chứng, kiểm tra chức năng motor và loại trừ các nguyên nhân khác.",
+            "treatment_methods": "Điều trị tập trung vào giảm triệu chứng thông qua thuốc gia tăng dopamin, tập luyện và thậm chí phẫu thuật nếu cần thiết.",
+            "prediction_and_prognosis": "Parkinson thường tiến triển dần, và tiên lượng tổng thể là xấu.",
+            "preventive_measures": "Không có phương pháp phòng ngừa chính xác, nhưng một số nghiên cứu cho thấy hoạt động thể chất có thể giảm nguy cơ.",
+            "complications": ["Rối loạn tâm thần", "Khó khăn trong việc thực hiện các hoạt động hàng ngày"],
+            "related_conditions": ["Bệnh Alzheimer", "Rối loạn chuyển hóa"],
+            "risk_factors": ["Yếu tố gen", "Tuổi tác", "Tiếp xúc với các chất độc hại"],
+            "age_prevalence": {
+                "elderly": "Parkinson thường xuất hiện ở người cao tuổi."
+            },
+            "vaccination": {
+                "availability": "Hiện nay không có vaccine đặc hiệu cho Parkinson.",
+                "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng Parkinson."
+            },
+            "recommended_medications": [
+                {"name": "Levodopa", "dosage": "Theo chỉ định của bác sĩ", "notes": "Tăng cường dopamin"},
+                {"name": "Ropinirole", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát triệu chứng run chuyển"}
+            ],
+            "references": [
+                {"title": "Michael J. Fox Foundation - Parkinson's Disease", "link": "https://www.michaeljfox.org/understanding-parkinsons"}
+            ]
+          },
+          {
+            "disease_name": "Đau thần kinh ngoại biên",
+            "description": "Đau thần kinh ngoại biên là một loại bệnh gây đau và khó chịu ở các thần kinh ngoại biên, thường xuất hiện ở chân và tay.",
+            "symptoms": ["Đau", "Nhức mỏi", "Giảm cảm giác", "Gặp khó khăn trong việc đi lại"],
+            "causes": "Nguyên nhân thường liên quan đến tổn thương thần kinh, tiểu đường, và một số bệnh lý khác.",
+            "diagnosis_methods": "Chẩn đoán dựa trên triệu chứng, kiểm tra cảm giác và điện tâm đồ thần kinh.",
+            "treatment_methods": "Điều trị tập trung vào giảm đau và kiểm soát nguyên nhân gốc.",
+            "prediction_and_prognosis": "Nếu được quản lý đúng cách, đau thần kinh ngoại biên có thể được kiểm soát và giảm nhẹ.",
+            "preventive_measures": "Quản lý các yếu tố nguy cơ như tiểu đường, duy trì lối sống lành mạnh.",
+            "complications": ["Gangrene", "Loét chân"],
+            "related_conditions": ["Tiểu đường", "Bệnh thận"],
+            "risk_factors": ["Tiểu đường", "Tổn thương thần kinh"],
+            "age_prevalence": {
+                "adults": "Đau thần kinh ngoại biên thường xuất hiện ở người trưởng thành."
+            },
+            "vaccination": {
+                "availability": "Hiện nay không có vaccine đặc hiệu cho đau thần kinh ngoại biên.",
+                "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng đau thần kinh ngoại biên."
+            },
+            "recommended_medications": [
+                {"name": "Gabapentin", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm đau thần kinh"},
+                {"name": "Tricyclic Antidepressants", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát triệu chứng"}
+            ],
+            "references": [
+                {"title": "Mayo Clinic - Peripheral Neuropathy", "link": "https://www.mayoclinic.org/diseases-conditions/peripheral-neuropathy/symptoms-causes/syc-20352061"}
+            ]
+         },
+         {
+          "disease_name": "Alzheimer",
+          "description": "Alzheimer là một loại rối loạn thần kinh tiến triển chậm, gây ra suy giảm trí nhớ và khả năng tư duy, thường xuất hiện ở người cao tuổi.",
+          "symptoms": ["Mất trí nhớ", "Khó tập trung", "Thay đổi tâm trạng", "Mất khả năng thực hiện các hoạt động hàng ngày"],
+          "causes": "Nguyên nhân chính của bệnh Alzheimer chưa rõ, nhưng do yếu tố gen và các biến đổi trong não liên quan đến protein beta-amyloid và tau.",
+          "diagnosis_methods": "Chẩn đoán dựa trên lịch sử triệu chứng, các xét nghiệm hình ảnh như MRI và PET scan, và kiểm tra chức năng tâm thần.",
+          "treatment_methods": "Hiện tại chưa có phương pháp điều trị cụ thể cho Alzheimer. Điều trị thường nhắm vào giảm triệu chứng và hỗ trợ bệnh nhân.",
+          "prediction_and_prognosis": "Bệnh Alzheimer tiến triển dần dần và dẫn đến suy giảm toàn diện về khả năng tự chủ. Tiên lượng tổng thể là xấu.",
+          "preventive_measures": "Không có phương pháp phòng ngừa chính xác, nhưng duy trì lối sống lành mạnh có thể giảm nguy cơ.",
+          "complications": ["Mất khả năng tự chủ", "Rối loạn ăn uống"],
+          "related_conditions": ["Parkinson", "Rối loạn tâm thần"],
+          "risk_factors": ["Tuổi tác", "Yếu tố gen", "Lối sống không lành mạnh"],
+          "age_prevalence": {
+              "elderly": "Bệnh Alzheimer thường xuất hiện ở người cao tuổi."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho Alzheimer.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng Alzheimer."
+          },
+          "recommended_medications": [
+              {"name": "Donepezil", "dosage": "5mg-10mg mỗi ngày", "notes": "Tăng cường chức năng tư duy"},
+              {"name": "Memantine", "dosage": "5mg-20mg mỗi ngày", "notes": "Kiểm soát triệu chứng"}
+          ],
+          "references": [
+              {"title": "Alzheimer's Association", "link": "https://www.alz.org/"},
+              {"title": "National Institute on Aging - Alzheimer's Disease", "link": "https://www.nia.nih.gov/conditions/alzheimers"}
+          ]
+        },
+        {
+          "disease_name": "Động kinh",
+          "description": "Động kinh là một rối loạn thần kinh có đặc điểm bởi các cơn co giật đột ngột và ngắn ngủn, có thể gây mất ý thức và chuyển động không kiểm soát.",
+          "symptoms": ["Cơn co giật", "Mất ý thức", "Chuyển động không kiểm soát"],
+          "causes": "Nguyên nhân thường không rõ, nhưng có thể do yếu tố gen, chấn thương đầu, hoặc bất kỳ tổn thương nào ảnh hưởng đến hoạt động điện tử của não.",
+          "diagnosis_methods": "Chẩn đoán dựa trên lịch sử triệu chứng, EEG và các kiểm tra hình ảnh như MRI.",
+          "treatment_methods": "Điều trị thường bao gồm sử dụng thuốc chống động kinh và trong một số trường hợp, phẫu thuật có thể được xem xét.",
+          "prediction_and_prognosis": "Đa số người mắc động kinh có thể kiểm soát triệu chứng với điều trị, nhưng nó có thể ảnh hưởng đến chất lượng cuộc sống.",
+          "preventive_measures": "Không có biện pháp phòng ngừa cụ thể, nhưng việc tuân thủ đúng liều thuốc có thể giảm nguy cơ cơn co giật.",
+          "complications": ["Tình trạng an toàn khi có cơn co giật", "Tăng nguy cơ tai nạn"],
+          "related_conditions": ["Hội chứng Down", "TBI - chấn thương não"],
+          "risk_factors": ["Yếu tố gen", "Chấn thương đầu", "Nhiễm trùng não"],
+          "age_prevalence": {
+              "children": "Động kinh thường xuất hiện ở trẻ em.",
+              "adults": "Cũng có nguy cơ ở người trưởng thành."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho động kinh.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng động kinh."
+          },
+          "recommended_medications": [
+              {"name": "Phenytoin", "dosage": "Theo chỉ định của bác sĩ", "notes": "Chống động kinh"},
+              {"name": "Valproic acid", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát cơn co giật"}
+          ],
+          "references": [
+              {"title": "Epilepsy Foundation - What is Epilepsy?", "link": "https://www.epilepsy.com/learn/about-epilepsy-basics/what-epilepsy"}
+          ]
+        },
+        {
+          "disease_name": "Đau thần kinh cấp tính",
+          "description": "Đau thần kinh cấp tính là một loại đau do tổn thương hoặc kích thích trực tiếp đến hệ thống thần kinh, thường gây ra cảm giác châm chích, nhức nhối hoặc đau nhức.",
+          "symptoms": ["Cảm giác châm chích", "Nhức nhối", "Đau nhức"],
+          "causes": "Có thể do tổn thương thần kinh, viêm nhiễm hoặc bất kỳ tình trạng nào ảnh hưởng đến hệ thống thần kinh.",
+          "diagnosis_methods": "Chẩn đoán dựa trên mô tả triệu chứng, kiểm tra thần kinh và các xét nghiệm hình ảnh.",
+          "treatment_methods": "Điều trị tập trung vào giảm đau thông qua thuốc giảm đau và các phương pháp thể chất.",
+          "prediction_and_prognosis": "Đau thần kinh cấp tính thường là một triệu chứng của một tình trạng nền, và tiên lượng phụ thuộc vào nguyên nhân gốc.",
+          "preventive_measures": "Không có biện pháp phòng ngừa cụ thể, nhưng việc quản lý tình trạng nền có thể giảm nguy cơ đau thần kinh.",
+          "complications": ["Trầm cảm", "Giảm chất lượng cuộc sống"],
+          "related_conditions": ["Điabetes", "Đau thần kinh tức thì"],
+          "risk_factors": ["Tiểu đường", "Chấn thương thần kinh", "Viêm nhiễm"],
+          "age_prevalence": {
+              "adults": "Đau thần kinh cấp tính thường ảnh hưởng đến người trưởng thành."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho đau thần kinh cấp tính.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng đau thần kinh cấp tính."
+          },
+          "recommended_medications": [
+              {"name": "Gabapentin", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm đau thần kinh"},
+              {"name": "Pregabalin", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát triệu chứng"}
+          ],
+          "references": [
+              {"title": "Mayo Clinic - Neuropathic Pain", "link": "https://www.mayoclinic.org/diseases-conditions/neuropathic-pain/symptoms-causes/syc-20366400"}
+          ]
+        },
+        {
+          "disease_name": "Suy giảm trí não",
+          "description": "Suy giảm trí não là một tình trạng mất mát trí óc và khả năng thực hiện các hoạt động hàng ngày do tổn thương não.",
+          "symptoms": ["Mất trí nhớ", "Thay đổi tâm lý", "Khó khăn trong việc thực hiện các hoạt động hàng ngày"],
+          "causes": "Nguyên nhân thường liên quan đến tổn thương não do Alzheimer, các vấn đề mạch máu não, hoặc các loại bệnh khác.",
+          "diagnosis_methods": "Chẩn đoán dựa trên đánh giá triệu chứng, kiểm tra trí óc và các xét nghiệm hình ảnh như MRI.",
+          "treatment_methods": "Hiện chưa có phương pháp chữa trị đặc hiệu, nhưng quản lý triệu chứng và hỗ trợ từ gia đình có thể giúp cải thiện chất lượng cuộc sống.",
+          "prediction_and_prognosis": "Suy giảm trí não thường phát triển dần dần và tiên lượng phụ thuộc vào nguyên nhân và cách quản lý.",
+          "preventive_measures": "Các biện pháp phòng ngừa bao gồm duy trì lối sống lành mạnh, tăng cường hoạt động tinh thần, và kiểm soát các yếu tố rủi ro như huyết áp cao.",
+          "complications": ["Mất khả năng tự chăm sóc", "Gặp khó khăn trong giao tiếp"],
+          "related_conditions": ["Alzheimer", "Suy giảm trí não do mạch máu não"],
+          "risk_factors": ["Tuổi tác", "Yếu tố gen", "Bệnh tim mạch"],
+          "age_prevalence": {
+              "elderly": "Suy giảm trí não thường phổ biến ở người cao tuổi."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho suy giảm trí não.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng suy giảm trí não."
+          },
+          "recommended_medications": [
+              {"name": "Donepezil", "dosage": "Theo chỉ định của bác sĩ", "notes": "Hỗ trợ chức năng trí óc"},
+              {"name": "Memantine", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát triệu chứng"}
+          ],
+          "references": [
+              {"title": "Alzheimer's Association - What is Dementia?", "link": "https://www.alz.org/alzheimers-dementia/what-is-dementia"}
+          ]
+        },
+        {
+          "disease_name": "Bệnh Huntington",
+          "description": "Bệnh Huntington là một rối loạn thần kinh di truyền, gây tổn thương não và suy giảm khả năng kiểm soát cơ bắp.",
+          "symptoms": ["Rung lắc", "Thay đổi tâm lý", "Mất khả năng kiểm soát cơ bắp"],
+          "causes": "Do đột biến gen gây ảnh hưởng đến sản xuất protein huntingtin, dẫn đến tổn thương não.",
+          "diagnosis_methods": "Chẩn đoán dựa trên lịch sử gia đình, kiểm tra gen, và các kiểm nghiệm hình ảnh như MRI.",
+          "treatment_methods": "Hiện chưa có phương pháp chữa trị, và điều trị tập trung vào giảm triệu chứng.",
+          "prediction_and_prognosis": "Bệnh Huntington không có phương pháp ngăn chặn hoặc chữa trị, và tiên lượng dựa vào triệu chứng và cách quản lý.",
+          "preventive_measures": "Không có biện pháp phòng ngừa cụ thể, nhưng kiểm tra gen có thể được thực hiện nếu có lịch sử gia đình.",
+          "complications": ["Mất khả năng tự chăm sóc", "Tình trạng trầm cảm"],
+          "related_conditions": ["Parkinson's Disease", "Suy giảm trí não"],
+          "risk_factors": ["Di truyền", "Có cha/mẹ/sibling mắc bệnh", "Một trong hai cha mẹ mang gen đột biến"],
+          "age_prevalence": {
+              "adults": "Bệnh Huntington thường phát hiện ở người trưởng thành."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho bệnh Huntington.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng bệnh Huntington."
+          },
+          "recommended_medications": [
+              {"name": "Tetrabenazine", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát rung lắc"},
+              {"name": "Antipsychotic medications", "dosage": "Theo chỉ định của bác sĩ", "notes": "Hỗ trợ tâm lý"}
+          ],
+          "references": [
+              {"title": "Huntington's Disease Society of America - About HD", "link": "https://hdsa.org/what-is-hd"}
+          ]
+        },
+        {
+          "disease_name": "Đột quỵ",
+          "description": "Đột quỵ là một sự ngưng trệ của dòng máu đến một phần của não, gây tổn thương não do thiếu máu hoặc máu chảy đến khu vực đó.",
+          "symptoms": ["Mất khả năng nói", "Mất cảm giác hoặc chảy nước mũi", "Mất khả năng di chuyển một bên cơ thể"],
+          "causes": "Nguyên nhân có thể là máu tắc nghẽn do động mạch bị tắc, hoặc máu chảy do vỡ động mạch.",
+          "diagnosis_methods": "Chẩn đoán thông qua kiểm tra hình ảnh như CT scan hoặc MRI, và đánh giá triệu chứng của bệnh nhân.",
+          "treatment_methods": "Điều trị tùy thuộc vào loại đột quỵ, bao gồm thuốc giảm đau, phục hồi chức năng và thậm chí phẫu thuật.",
+          "prediction_and_prognosis": "Tiên lượng phụ thuộc vào mức độ tổn thương não và thời gian cần để đưa ra điều trị.",
+          "preventive_measures": "Các biện pháp phòng ngừa bao gồm duy trì lối sống lành mạnh, kiểm soát huyết áp và đường huyết.",
+          "complications": ["Mất khả năng tự chăm sóc", "Tình trạng trầm cảm"],
+          "related_conditions": ["Huyết áp cao", "Tiểu đường", "Bệnh tim mạch"],
+          "risk_factors": ["Huyết áp cao", "Hút thuốc lá", "Tiểu đường"],
+          "age_prevalence": {
+              "elderly": "Người già thường có nguy cơ cao hơn."
+          },
+          "vaccination": {
+              "availability": "Không có vaccine đặc hiệu cho đột quỵ.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng đột quỵ."
+          },
+          "recommended_medications": [
+              {"name": "Aspirin", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm nguy cơ tắc nghẽn máu"},
+              {"name": "Tissue plasminogen activator (tPA)", "dosage": "Theo chỉ định của bác sĩ", "notes": "Hỗ trợ tan máu"}
+          ],
+          "references": [
+              {"title": "American Stroke Association - About Stroke", "link": "https://www.stroke.org/en/about-stroke"}
+          ]
+        },
+        {
+          "disease_name": "Đau nửa đầu",
+          "description": "Đau nửa đầu là một loại đau đầu cường điệu thường đi kèm với các triệu chứng như buồn nôn, mệt mỏi và ánh sáng kích thích.",
+          "symptoms": ["Đau nửa đầu", "Buồn nôn", "Nhạy cảm với ánh sáng"],
+          "causes": "Nguyên nhân không rõ ràng, nhưng được cho là liên quan đến thay đổi trong hoạt động não.",
+          "diagnosis_methods": "Chẩn đoán dựa trên mô tả triệu chứng và loại đau nửa đầu.",
+          "treatment_methods": "Điều trị bao gồm thuốc giảm đau và điều trị dựa trên triệu chứng.",
+          "prediction_and_prognosis": "Đau nửa đầu thường kéo dài từ vài giờ đến vài ngày và có thể được kiểm soát thông qua quản lý triệu chứng.",
+          "preventive_measures": "Biện pháp phòng ngừa bao gồm tránh các cơ địa kích thích, duy trì lối sống lành mạnh và giảm căng thẳng.",
+          "complications": ["Trầm cảm", "Tình trạng trầm trọng"],
+          "related_conditions": ["Cluster Headache", "Tension Headache"],
+          "risk_factors": ["Yếu tố gen", "Thay đổi hormone", "Thiếu ngủ"],
+          "age_prevalence": {
+              "adults": "Người trưởng thành thường là nhóm người mắc đau nửa đầu nhiều nhất."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho đau nửa đầu.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng đau nửa đầu."
+          },
+          "recommended_medications": [
+              {"name": "Sumatriptan", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm đau và buồn nôn"},
+              {"name": "Prophylactic medications", "dosage": "Dùng theo hướng dẫn của bác sĩ", "notes": "Ngăn chặn cơn đau trước khi bắt đầu"}
+          ],
+          "references": [
+              {"title": "American Migraine Foundation - About Migraine", "link": "https://americanmigrainefoundation.org/resource-library/migraine/"}
+          ]
+        },
+        {
+          "disease_name": "Bệnh đa xơ cứng",
+          "description": "Bệnh đa xơ cứng là một rối loạn autoimmune tác động vào hệ thống thần kinh, gây tổn thương màng bọc thần kinh.",
+          "symptoms": ["Mệt mỏi", "Mất cân bằng", "Rối loạn thị giác"],
+          "causes": "Nguyên nhân chưa rõ, nhưng được cho là liên quan đến sự phản định của hệ thống miễn dịch.",
+          "diagnosis_methods": "Chẩn đoán dựa trên các xét nghiệm hình ảnh như MRI và đánh giá các triệu chứng.",
+          "treatment_methods": "Điều trị tập trung vào giảm triệu chứng và kiểm soát sự phát triển của bệnh.",
+          "prediction_and_prognosis": "Bệnh đa xơ cứng thường diễn tiến dần dần và tiên lượng phụ thuộc vào cách quản lý và đặc tính của bệnh ở từng người.",
+          "preventive_measures": "Không có phương pháp phòng ngừa chính xác, nhưng duy trì lối sống lành mạnh có thể hỗ trợ.",
+          "complications": ["Tàn tật", "Mất khả năng tự chăm sóc", "Rối loạn tâm thần"],
+          "related_conditions": ["Neuromyelitis Optica", "Guillain-Barré Syndrome"],
+          "risk_factors": ["Yếu tố gen", "Hút thuốc lá", "Thiếu vitamin D"],
+          "age_prevalence": {
+              "adults": "Người trưởng thành thường là nhóm người mắc đa xơ cứng nhiều nhất."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho bệnh đa xơ cứng.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng bệnh đa xơ cứng."
+          },
+          "recommended_medications": [
+              {"name": "Corticosteroids", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm viêm"},
+              {"name": "Disease-modifying therapies", "dosage": "Dùng theo hướng dẫn của bác sĩ", "notes": "Kiểm soát sự phát triển của bệnh"}
+          ],
+          "references": [
+              {"title": "National Multiple Sclerosis Society - About MS", "link": "https://www.nationalmssociety.org/What-is-MS"}
+          ]
+        },
+        {
+          "disease_name": "Bệnh Lou Gehrig (ALS)",
+          "description": "ALS là một bệnh thần kinh tiến triển, ảnh hưởng đến tế bào thần kinh trong não và tuỷ sống, dẫn đến mất khả năng kiểm soát cơ bắp.",
+          "symptoms": ["Yếu cơ", "Mất khả năng nói chuyện", "Mất khả năng nuốt"],
+          "causes": "Nguyên nhân chưa rõ, một số trường hợp có liên quan đến yếu tố gen, nhưng phần lớn là nguyên nhân ngẫu nhiên.",
+          "diagnosis_methods": "Chẩn đoán dựa trên lịch sử triệu chứng, các xét nghiệm và loại trừ các nguyên nhân khác.",
+          "treatment_methods": "Hiện chưa có phương pháp chữa trị, và điều trị tập trung vào giảm triệu chứng và hỗ trợ chăm sóc.",
+          "prediction_and_prognosis": "ALS thường phát triển nhanh chóng và có tiên lượng xấu, dẫn đến mất khả năng di chuyển và thậm chí là tử vong.",
+          "preventive_measures": "Không có biện pháp phòng ngừa chính xác cho ALS.",
+          "complications": ["Tàn tật toàn bộ", "Mất khả năng tự chăm sóc", "Tình trạng trầm cảm"],
+          "related_conditions": ["Frontotemporal Dementia", "Progressive Muscular Atrophy"],
+          "risk_factors": ["Tuổi tác", "Yếu tố gen", "Nghề nghiệp có thể liên quan đến chất độc hại"],
+          "age_prevalence": {
+              "adults": "Người trưởng thành thường là nhóm người mắc ALS nhiều nhất."
+          },
+          "vaccination": {
+              "availability": "Hiện nay không có vaccine đặc hiệu cho ALS.",
+              "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng ALS."
+          },
+          "recommended_medications": [
+              {"name": "Riluzole", "dosage": "Theo chỉ định của bác sĩ", "notes": "Chậm tiến triển của bệnh"},
+              {"name": "Edaravone", "dosage": "Theo chỉ định của bác sĩ", "notes": "Chống tổn thương tế bào thần kinh"}
+          ],
+          "references": [
+              {"title": "ALS Association - About ALS", "link": "https://www.als.org/what-is-als"}
+          ]
+        },
+        {
+          "disease_name": "Viêm não",
+          "description": "Viêm não là một bệnh lý nhiễm trùng hoặc viêm nhiễm của não, có thể gây ra các triệu chứng như sốt, đau đầu và thay đổi tâm trạng.",
+          "symptoms": ["Sốt", "Đau đầu", "Buồn nôn", "Thay đổi tâm trạng"],
+          "causes": "Nguyên nhân thường liên quan đến virus hoặc vi khuẩn, đôi khi do các tác nhân ngoại vi như ký sinh trùng.",
+          "diagnosis_methods": "Chẩn đoán dựa trên triệu chứng, các xét nghiệm hình ảnh như MRI, và xác định tác nhân gây bệnh.",
+          "treatment_methods": "Điều trị tập trung vào giảm triệu chứng, sử dụng kháng vi khuẩn hoặc antiviral tùy thuộc vào nguyên nhân.",
+          "prediction_and_prognosis": "Hậu quả của viêm não phụ thuộc vào nguyên nhân, nhưng nếu được điều trị sớm, nhiều trường hợp có thể phục hồi hoàn toàn.",
+          "preventive_measures": "Phòng ngừa bao gồm tiêm phòng đúng lịch, hạn chế tiếp xúc với người nhiễm bệnh, và duy trì vệ sinh cá nhân.",
+          "complications": ["Tàn tật", "Rối loạn thị giác", "Tình trạng co giật"],
+          "related_conditions": ["Meningitis", "Polio", "Neurological Sequelae of COVID-19"],
+          "risk_factors": ["Hệ miễn dịch yếu", "Tiếp xúc với người nhiễm bệnh", "Tuổi tác"],
+          "age_prevalence": {
+              "children": "Viêm não thường phổ biến ở trẻ em.",
+              "adults": "Người trưởng thành cũng có thể mắc viêm não, đặc biệt là người già."
+          },
+          "vaccination": {
+              "availability": "Một số loại vaccine có thể ngăn ngừa một số nguyên nhân gây viêm não, nhưng không phải tất cả.",
+              "recommendation": "Kiểm tra và tuân thủ lịch tiêm phòng được đề xuất."
+          },
+          "recommended_medications": [
+              {"name": "Antiviral medications", "dosage": "Theo chỉ định của bác sĩ", "notes": "Chống virus gây bệnh"},
+              {"name": "Corticosteroids", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm viêm nếu cần thiết"},
+              {"name": "Pain relievers", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm đau và sốt"}
+          ],
+          "references": [
+              {"title": "Centers for Disease Control and Prevention - Encephalitis", "link": "https://www.cdc.gov/encephalitis/index.html"}
+          ]
+        },
+        {
+          "disease_name": "U Não",
+          "description": "U não là một khối u ác tính phát triển trong não, có thể gây áp lực lên các khu vực xung quanh và gây ra nhiều vấn đề sức khỏe.",
+          "symptoms": ["Đau đầu", "Buồn nôn", "Thay đổi tư duy", "Mất cân nặng", "Thay đổi thị lực"],
+          "causes": "Nguyên nhân của u não có thể liên quan đến độ gen, tác động môi trường hoặc không rõ ràng.",
+          "diagnosis_methods": "Chẩn đoán dựa trên triệu chứng, lịch sử sự kiện và các phương pháp hình ảnh như CT scan hoặc MRI.",
+          "treatment_methods": "Phác đồ điều trị bao gồm phẫu thuật loại bỏ u, tia X, hóa trị hoặc các phương pháp chăm sóc hỗ trợ.",
+          "prediction_and_prognosis": "Dựa vào loại và giai đoạn của u, kết quả và dự đoán có thể thay đổi, từ hoàn toàn phục hồi đến các vấn đề nghiêm trọng.",
+          "preventive_measures": "Không có biện pháp phòng ngừa chính xác cho u não, nhưng theo dõi sức khỏe định kỳ có thể giúp phát hiện sớm.",
+          "complications": ["Tàn phế", "Mất trí nhớ", "Tình trạng co giật"],
+          "related_conditions": ["Glioma", "Meningioma", "Acoustic Neuroma"],
+          "risk_factors": ["Yếu tố gen", "Tia X", "Tuổi tác"],
+          "age_prevalence": {
+            "children": "U não ở trẻ em là hiếm, nhưng có thể xảy ra.",
+            "adults": "Người trưởng thành thường gặp phải nguy cơ cao hơn."
+          },
+          "vaccination": {
+            "availability": "Hiện tại không có vaccine đặc hiệu cho u não.",
+            "recommendation": "Không có khuyến nghị cụ thể cho việc tiêm phòng u não."
+          },
+          "recommended_medications": [
+            {"name": "Pain relievers", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm đau"},
+            {"name": "Anti-seizure medications", "dosage": "Theo chỉ định của bác sĩ", "notes": "Kiểm soát cơn co giật nếu có"},
+            {"name": "Corticosteroids", "dosage": "Theo chỉ định của bác sĩ", "notes": "Giảm viêm nếu cần thiết"}
+          ],
+          "references": [
+            {"title": "American Brain Tumor Association - About Brain Tumors", "link": "https://www.abta.org/about-brain-tumors/"}
+          ]
+        }
+        ]
       }
+      
+        
 ];
