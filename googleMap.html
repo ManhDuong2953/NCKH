@@ -14,9 +14,7 @@
       <h1 class="mb-4">Tìm kiếm bệnh</h1>
       <label for="userSymptoms" class="form-label">Nhập triệu chứng:</label>
       <input type="text" id="userSymptoms" class="form-control" />
-      <button onclick="searchDisease()" class="btn btn-primary mt-3">
-        Tìm kiếm
-      </button>
+      <button class="btn btn-primary mt-3">Tìm kiếm</button>
 
       <div id="result" class="mt-4"></div>
     </div>
@@ -25,7 +23,7 @@
     <script src="./handleSymptoms.js"></script>
     <script>
       function searchDisease(e) {
-        const userSymptoms = e.toLowerCase();
+        const userSymptoms = e;
         const filteredKeywords = filterKeywords(
           userSymptoms,
           getAllSymptoms(diseases)
@@ -35,6 +33,10 @@
           filteredKeywords
         );
 
+        console.log("Triệu chứng nhập vào: ", e);
+        console.log("Từ khóa triệu chứng được lọc", filteredKeywords);
+        console.log("Chẩn đoán bệnh: ", mostMatchingDisease);
+
         // Tạo nội dung HTML để hiển thị chi tiết bệnh
         const resultDiv = document.getElementById("result");
         if (mostMatchingDisease) {
@@ -42,88 +44,90 @@
                   <div class="card">
                     <div class="card-body">
                         <h2 class="card-title">Bệnh: ${
-                          mostMatchingDisease.disease_name
+                          mostMatchingDisease?.disease_name
                         }</h2>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <strong>Triệu chứng:</strong><br>
-                                ${mostMatchingDisease.symptoms.join("<br>")}
+                                ${mostMatchingDisease?.symptoms?.join("<br>")}
                             </li>
                             <li class="list-group-item">
                                 <strong>Nguyên nhân:</strong><br>
-                                ${mostMatchingDisease.causes}
+                                ${mostMatchingDisease?.causes}
                             </li>
                             <li class="list-group-item">
                                 <strong>Phương pháp chẩn đoán:</strong><br>
-                                ${mostMatchingDisease.diagnosis_methods}
+                                ${mostMatchingDisease?.diagnosis_methods}
                             </li>
                             <li class="list-group-item">
                                 <strong>Phương pháp điều trị:</strong><br>
-                                ${mostMatchingDisease.treatment_methods}
+                                ${mostMatchingDisease?.treatment_methods}
                             </li>
                             <li class="list-group-item">
                                 <strong>Dự đoán và tiên lượng:</strong><br>
-                                ${mostMatchingDisease.prediction_and_prognosis}
+                                ${mostMatchingDisease?.prediction_and_prognosis}
                             </li>
                             <li class="list-group-item">
                                 <strong>Biện pháp phòng ngừa:</strong><br>
-                                ${mostMatchingDisease.preventive_measures}
+                                ${mostMatchingDisease?.preventive_measures}
                             </li>
                             <li class="list-group-item">
                                 <strong>Mức độ phổ biến:</strong><br>
-                                ${mostMatchingDisease.prevalence}
+                                ${mostMatchingDisease?.prevalence}
                             </li>
                             <li class="list-group-item">
                                 <strong>Biến chứng:</strong><br>
-                                ${mostMatchingDisease.complications.join(
+                                ${mostMatchingDisease?.complications?.join(
                                   "<br>"
                                 )}
                             </li>
                             <li class="list-group-item">
                                 <strong>Bệnh liên quan:</strong><br>
-                                ${mostMatchingDisease.related_conditions.join(
+                                ${mostMatchingDisease?.related_conditions?.join(
                                   "<br>"
                                 )}
                             </li>
                             <li class="list-group-item">
                                 <strong>Yếu tố nguy cơ:</strong><br>
-                                ${mostMatchingDisease.risk_factors.join("<br>")}
+                                ${mostMatchingDisease?.risk_factors?.join(
+                                  "<br>"
+                                )}
                             </li>
                             <li class="list-group-item">
                                 <strong>Thông tin về sự phổ biến ở các nhóm tuổi:</strong><br>
                                 &emsp;Trẻ em: ${
-                                  mostMatchingDisease.age_prevalence.children
+                                  mostMatchingDisease?.age_prevalence?.children
                                 }<br>
                                 &emsp;Người lớn: ${
-                                  mostMatchingDisease.age_prevalence.adults
+                                  mostMatchingDisease?.age_prevalence?.adults
                                 }
                             </li>
                             <li class="list-group-item">
                                 <strong>Vaccine:</strong><br>
                                 ${
-                                  mostMatchingDisease.vaccination.availability
+                                  mostMatchingDisease?.vaccination?.availability
                                 } <br> ${
-            mostMatchingDisease.vaccination.recommendation
+            mostMatchingDisease?.vaccination?.recommendation
           }
                             </li>
                             <li class="list-group-item">
                                 <strong>Thuốc khuyến cáo:</strong><br>
                                 <ul>
-                                    ${mostMatchingDisease.recommended_medications
-                                      .map(
+                                    ${mostMatchingDisease?.recommended_medications
+                                      ?.map(
                                         (medication) =>
-                                          `<li>${medication.name} - ${medication.dosage} - ${medication.notes}</li>`
+                                          `<li>${medication?.name} - ${medication?.dosage} - ${medication?.notes}</li>`
                                       )
-                                      .join("")}
+                                      ?.join("")}
                                 </ul>
                             </li>
                             <li class="list-group-item">
                                 <strong>Tham khảo nguồn thông tin:</strong><br>
                                 <ul>
-                                    ${mostMatchingDisease.references
-                                      .map(
+                                    ${mostMatchingDisease?.references
+                                      ?.map(
                                         (reference) =>
-                                          `<li><a href="${reference.link}" target="_blank">${reference.title}</a></li>`
+                                          `<li><a href="${reference?.link}" target="_blank">${reference?.title}</a></li>`
                                       )
                                       .join("")}
                                 </ul>
@@ -137,8 +141,11 @@
       }
       // Sự kiện khi người dùng thay đổi nội dung trường nhập
       document
-        .getElementById("userSymptoms")
-        .addEventListener("change", (e) => searchDisease(e.target.value));
+        .querySelector(".btn.btn-primary.mt-3")
+        .addEventListener("click", () => {
+          let keyword = document.getElementById("userSymptoms").value;
+          searchDisease(keyword);
+        });
     </script>
   </body>
 </html>
