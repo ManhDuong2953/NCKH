@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lấy tọa độ hiện tại và địa điểm hiện tại</title>
+  </head>
+  <body>
+    <script src="./location.js"></script>
+    <h2>Lấy tọa độ hiện tại và địa điểm hiện tại</h2>
+    <button onclick="getLocation()">Lấy vị trí hiện tại</button>
+    <p id="coordinates"></p>
+    <p id="city"></p>
+    <p id="country"></p>
+    <p id="postcode"></p>
+    <p id="suburb"></p>
+    <p id="quarter"></p>
+    <h3>Các cơ sở y tế của phường:</h3>
+    <ul id="medical-facilities"></ul>
+
+    <script>
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          alert("Trình duyệt của bạn không hỗ trợ định vị địa lý.");
+        }
+      }
+
+      function showPosition(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        var coordinates =
+          "Tọa độ hiện tại của bạn là: " + latitude + ", " + longitude;
+
+        document.getElementById("coordinates").innerHTML = coordinates;
+
+        // Gửi yêu cầu đến API để lấy thông tin địa chỉ từ tọa độ
+        fetch(
+          `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            // In ra các thông tin cần thiết vào DOM
+            document.getElementById("city").innerHTML =
+              "Thành phố: " + data.address.city;
+            document.getElementById("country").innerHTML =
+              "Quốc gia: " + data.address.country;
+            document.getElementById("postcode").innerHTML =
+              "Mã bưu chính: " + data.address.postcode;
+            document.getElementById("suburb").innerHTML =
+              "Quận/huyện: " + data.address.suburb;
+            document.getElementById("quarter").innerHTML =
+              "Phường/xã: " + data.address.quarter;
+
+            return data.address.quarter;
+          })
+          .then((quarter) => {
+            const hospitalNearnest = locationData["Hà Nội"].filter(
+              (item) => Object.keys(item) == "Quận Nam Từ Liêm"
+            );
+            console.log(locationData["Hà Nội"]);
+            console.log(hospitalNearnest[0]);
+            hospitalNearnest[0][Object.keys(hospitalNearnest[0]).toString()][
+              "Phòng khám"
+            ]?.forEach((clinic) => {
+              const listItem = document.createElement("li");
+              listItem.textContent = clinic["Tên"];
+              document
+                .getElementById("medical-facilities")
+                .appendChild(listItem);
+            });
+
+            hospitalNearnest[0][Object.keys(hospitalNearnest[0]).toString()][
+              "Trạm y tế"
+            ]?.forEach((medicalStation) => {
+              let aDirect = document.createElement("a");
+              aDirect.href =
+                "https://www.google.com/maps/dir/21.073131,+105.771688/" +
+                encodeURIComponent(medicalStation["Tên"]);
+              aDirect.textContent = medicalStation["Tên"];
+
+              document
+                .getElementById("medical-facilities")
+                .appendChild(aDirect);
+            });
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+    </script>
+  </body>
+</html>

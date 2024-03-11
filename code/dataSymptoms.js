@@ -377,7 +377,7 @@ let diseases = [
     {
         "disease_name": "Gãy xương",
         "description": "Gãy xương là tình trạng khi xương bị vỡ hoặc gãy, thường xảy ra sau chấn thương hoặc tai nạn. Triệu chứng thường bao gồm đau, sưng và khó di chuyển. Phụ thuộc vào vị trí và mức độ nghiêm trọng, gãy xương có thể cần điều trị từ bằng cách nằm yên hoặc thông qua phẫu thuật.",
-        "symptoms": ["Đau", "Sưng", "Khó di chuyển"],
+        "symptoms": ["Đau xương", "Sưng", "Khó di chuyển"],
         "causes": "Nguyên nhân của gãy xương thường là do chấn thương hoặc tai nạn.",
         "diagnosis_methods": "Chẩn đoán gãy xương thường dựa vào lịch sử bệnh, kiểm tra cận lâm sàng và hình ảnh X-quang hoặc MRI.",
         "treatment_methods": "Phương pháp điều trị gãy xương có thể bao gồm đặt nằm yên, đúc xương, cố định bằng băng, hoặc phẫu thuật để cố định xương.",
@@ -439,7 +439,7 @@ let diseases = [
     {
         "disease_name": "Loãng xương",
         "description": "Loãng xương là một tình trạng mất mật độ xương và làm cho xương trở nên yếu và dễ gãy. Triệu chứng thường không rõ ràng cho đến khi xảy ra gãy xương. Các yếu tố nguy cơ bao gồm tuổi, giới tính, di truyền và lối sống. Phòng ngừa và điều trị bao gồm tăng cường canxi và vitamin D, tập thể dục và thuốc phòng loãng xương.",
-        "symptoms": ["Không rõ ràng cho đến khi xảy ra gãy xương"],
+        "symptoms": ["Đau xương", "Xương giòn", "Dễ gãy xương"],
         "causes": "Nguyên nhân của loãng xương thường liên quan đến mất mật độ xương do tuổi tác, giới tính, di truyền, và lối sống.",
         "diagnosis_methods": "Chẩn đoán loãng xương thường dựa vào xét nghiệm đo mật độ xương và hình ảnh X-quang.",
         "treatment_methods": "Phương pháp điều trị loãng xương bao gồm tăng cường canxi và vitamin D, tập thể dục, và trong một số trường hợp, sử dụng thuốc phòng loãng xương.",
@@ -470,7 +470,7 @@ let diseases = [
     {
         "disease_name": "Viêm khớp dạng thấp",
         "description": "Viêm khớp dạng thấp là một loại viêm khớp tự miễn dịch, ảnh hưởng chủ yếu đến các khớp nhỏ như cổ tay và ngón tay. Bệnh gây ra viêm, đau, sưng và hạn chế vận động của khớp. Nếu không được điều trị kịp thời và hiệu quả, viêm khớp dạng thấp có thể gây ra tổn thương cơ thể nặng nề và tàn phế.",
-        "symptoms": ["Đau khớp", "Sưng khớp", "Hạn chế vận động"],
+        "symptoms": ["Đau khớp", "Sưng khớp", "Hạn chế vận động", "Đi lại khó khăn"],
         "causes": "Nguyên nhân của viêm khớp dạng thấp không được hiểu rõ, nhưng bệnh thường xuất hiện do phản ứng miễn dịch sai lầm tấn công các mô trong cơ thể.",
         "diagnosis_methods": "Chẩn đoán viêm khớp dạng thấp thường dựa vào triệu chứng của bệnh, xét nghiệm máu để phát hiện các dấu hiệu viêm và hình ảnh chụp X-quang hoặc siêu âm để kiểm tra tổn thương khớp.",
         "treatment_methods": "Phương pháp điều trị viêm khớp dạng thấp bao gồm thuốc chống viêm, dùng corticosteroid, thuốc giảm đau và thuốc ức chế miễn dịch.",
@@ -2261,7 +2261,7 @@ let diseases = [
     {
         "disease_name": "Viêm da dị ứng",
         "description": "Viêm da dị ứng là một phản ứng viêm của da do tiếp xúc với chất kích ứng.",
-        "symptoms": ["Ngứa", "Phát ban", "Đỏ", "Bong tróc"],
+        "symptoms": ["Ngứa ngoài da", "Phát ban", "Đỏ ngoài da", "Bong tróc"],
         "causes": "Các chất kích ứng gây ra viêm da dị ứng có thể là hóa chất trong mỹ phẩm, thuốc, thực phẩm, và vật liệu tiếp xúc khác.",
         "diagnosis_methods": "Chẩn đoán viêm da dị ứng dựa vào triệu chứng và lịch sử tiếp xúc với các chất kích ứng có thể.",
         "treatment_methods": "Phương pháp điều trị viêm da dị ứng bao gồm sử dụng kem corticosteroid, thuốc kháng histamin, và tránh tiếp xúc với chất kích ứng.",
@@ -3744,7 +3744,7 @@ let diseases = [
     {
         "disease_name": "Đau thần kinh ngoại biên",
         "description": "Đau thần kinh ngoại biên là một loại bệnh gây đau và khó chịu ở các thần kinh ngoại biên, thường xuất hiện ở chân và tay.",
-        "symptoms": ["Đau", "Nhức mỏi", "Giảm cảm giác", "Gặp khó khăn trong việc đi lại"],
+        "symptoms": ["Đau cơ", "Nhức mỏi", "Giảm cảm giác", "Gặp khó khăn trong việc đi lại"],
         "causes": "Nguyên nhân thường liên quan đến tổn thương thần kinh, tiểu đường, và một số bệnh lý khác.",
         "diagnosis_methods": "Chẩn đoán dựa trên triệu chứng, kiểm tra cảm giác và điện tâm đồ thần kinh.",
         "treatment_methods": "Điều trị tập trung vào giảm đau và kiểm soát nguyên nhân gốc.",
