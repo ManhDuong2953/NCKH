@@ -1,0 +1,107 @@
+body {
+  background-image: linear-gradient(
+    rgb(254, 255, 255) 0%,
+    rgb(221, 241, 249) 20%,
+    rgb(32, 85, 138) 100%
+  );
+  background-color: #a0d8ef;
+  background-size: 100% 1000px;
+  color: #444444;
+  font-size: 14px;
+  grid-area: auto;
+  line-height: 21px;
+}
+.bgtop {
+  background-color: #20558a;
+  padding: 1px;
+}
+.container-nav {
+  justify-content: stretch;
+  align-items: stretch;
+  border: 1px solid black; /* Border toàn màn hình */
+  overflow: hidden; /* Để nội dung không vượt ra khỏi container */
+  background-color: white;
+}
+
+/* chỉnh sửa search */
+.search-container {
+  display: flex;
+  border: 1px solid #ccc;
+  align-items: center;
+  border-radius: 20px;
+  width: 230px;
+  position: relative;
+  right: -140px;
+  margin: 30px;
+  background-color: white;
+}
+.search-input {
+  outline: none;
+  border: none;
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+
+/* chỉnh sửa menu */
+.option-web {
+  display: flex;
+  list-style: none;
+  margin-top: 30px;
+}
+.option-web a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  right: -230px;
+  background-color: #20558a;
+}
+.option-web-right {
+  position: relative;
+  right: -200px;
+}
+.option-web-left {
+  position: relative;
+  left: -80px;
+}
+.container-nav {
+  background-image: url("../image/slide-blood-vessels.jpg");
+}
+
+.container-info {
+  max-width: 65%;
+  justify-content: stretch;
+  align-items: stretch;
+  border: 1px solid black; /* Border toàn màn hình */
+  overflow: hidden; /* Để nội dung không vượt ra khỏi container */
+  background-color: white;
+  position: relative;
+  right: -263px;
+}
+.container-info h1 {
+  font-size: 27px;
+  margin: 30px 0px 0px 40px;
+}
+.infomation {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.more-info {
+  width: 100px;
+  height: 40px;
+  border: 2px solid #20558a;
+  border-radius: 5px;
+  background-color: white;
+  color: #20558a;
+}
+.more-info:hover {
+  background-color: #20558a;
+  color: white;
+}
