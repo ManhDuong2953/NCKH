@@ -10,11 +10,11 @@
       rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  integrity="sha512-9aPzsoy+lqK9xcvSG4pEC6iG7gTQsgoAGD6XBv1G6ujn1HFAviBL2QzJxvObdVf4Q"
-  crossorigin="anonymous"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-9aPzsoy+lqK9xcvSG4pEC6iG7gTQsgoAGD6XBv1G6ujn1HFAviBL2QzJxvObdVf4Q"
+      crossorigin="anonymous"
+    />
 
     <style>
       table {
@@ -92,16 +92,12 @@
           .then((data) => {
             console.log(data);
             // In ra các thông tin cần thiết vào DOM
-            document.getElementById("city").innerHTML =
-              "Thành phố: " + data.address.city;
-            document.getElementById("country").innerHTML =
-              "Quốc gia: " + data.address.country;
+            document.getElementById("city").innerHTML = data.address.city;
+            document.getElementById("country").innerHTML = data.address.country;
             document.getElementById("postcode").innerHTML =
-              "Mã bưu chính: " + data.address.postcode;
-            document.getElementById("suburb").innerHTML =
-              "Quận/huyện: " + data.address.suburb;
-            document.getElementById("quarter").innerHTML =
-              "Phường/xã: " + data.address.quarter;
+              data.address.postcode;
+            document.getElementById("suburb").innerHTML = data.address.suburb;
+            document.getElementById("quarter").innerHTML = data.address.quarter;
 
             return data.address.suburb;
           })
@@ -118,7 +114,7 @@
               Object.keys(hospitalNearnest[0]).toString()
             ]?.forEach((medicalStation) => {
               let tr = document.createElement("tr");
-              
+
               let td1 = document.createElement("td");
               td1.textContent = medicalStation["Mã số"];
 
